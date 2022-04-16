@@ -1,7 +1,8 @@
 body {
-  background-image: url("/public/assets/bg.png");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-position-y: 25%;
 }
 
 .login, .homepage, .register {
@@ -219,5 +220,371 @@ h2 {
   .image {
     display: none;
   }
+}
+
+.nam {
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.8em;
+  gap: 0.4em;
+  -webkit-transform: translateY(0.7em);
+          transform: translateY(0.7em);
+}
+
+.nam:hover {
+  color: aqua;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.col1 {
+  -webkit-animation: bubble 2.7s ease-in-out infinite;
+          animation: bubble 2.7s ease-in-out infinite;
+}
+
+.col2 {
+  -webkit-animation: bubble 3s ease-in-out infinite;
+          animation: bubble 3s ease-in-out infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.col3 {
+  -webkit-animation: bubble 3s ease-in-out infinite;
+          animation: bubble 3s ease-in-out infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.col4 {
+  -webkit-animation: bubble 3s ease-in-out infinite;
+          animation: bubble 3s ease-in-out infinite;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.col5 {
+  -webkit-animation: bubble 3s ease-in-out infinite;
+          animation: bubble 3s ease-in-out infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.col6 {
+  -webkit-animation: bubble 3s ease-in-out infinite;
+          animation: bubble 3s ease-in-out infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.col7 {
+  -webkit-animation: bubble 3s ease-in-out infinite;
+          animation: bubble 3s ease-in-out infinite;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.col8 {
+  -webkit-animation: bubble 3s ease-in-out infinite;
+          animation: bubble 3s ease-in-out infinite;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+.col9 {
+  -webkit-animation: bubble 3s ease-in-out infinite;
+          animation: bubble 3s ease-in-out infinite;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+@-webkit-keyframes bubble {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bubble {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav > svg {
+  height: 30px;
+  width: 50px;
+  margin: 20px;
+  fill: white;
+}
+
+nav > svg:hover {
+  fill: aqua;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+nav > a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav > a:hover {
+  border-bottom: 4px solid aqua;
+  color: aqua;
+}
+
+.Features {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px;
+  color: aliceblue;
+  border-bottom: 3px solid aliceblue;
+}
+
+.midA {
+  height: 40px;
+}
+
+.Sub_Ftr {
+  width: 80vw;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.Ftr {
+  background-color: #201d1e;
+  color: white;
+  height: 220px;
+  text-align: center;
+  font-size: 4vw;
+  padding: 5vh;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
+  border: 2px solid white;
+  border-radius: 0.4em;
+  /* padding: 10vh; */
+}
+
+.Ftr:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: black;
+  -webkit-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.Bot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  fill: aliceblue;
+  cursor: pointer;
+}
+
+.Bot > svg {
+  /* height: 50px; */
+  width: 4vw;
+  -webkit-animation: mymove 2s infinite;
+          animation: mymove 2s infinite;
+}
+
+@-webkit-keyframes mymove {
+  /* 0% {transform: scale(1);} */
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  /* 60% {transform: scale(1.1);} */
+  /* 80% {transform: scale(1);} */
+}
+
+@keyframes mymove {
+  /* 0% {transform: scale(1);} */
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  /* 60% {transform: scale(1.1);} */
+  /* 80% {transform: scale(1);} */
+}
+
+.Bot > svg:hover {
+  fill: aqua;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+.Query {
+  height: 40vh;
+  width: 15vw;
+  background-color: #b7b7d6;
+  position: fixed;
+  bottom: 3vh;
+  right: 8vw;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
+  z-index: 1;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.Query_Closed {
+  height: 40vh;
+  width: 15vw;
+  background-color: #b7b7d6;
+  position: fixed;
+  bottom: 3vh;
+  right: 8vw;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
+  z-index: 1;
+  border-radius: 5px;
+  /* opacity: 0; */
+}
+
+.inpForm {
+  position: fixed;
+  bottom: 4vh;
+}
+
+.WriteQuery {
+  border-radius: 20px;
+  width: 11vw;
+  margin-left: 2px;
+}
+
+.Send {
+  width: 3vw;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+}
+
+.Send:hover {
+  background-color: lime;
+}
+
+video {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  opacity: 0.3;
+}
+
+.color-overlay {
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.rit {
+  position: absolute;
+  right: 0;
+  color: aliceblue;
+  -webkit-transform: translateY(1em);
+          transform: translateY(1em);
+  height: 2em;
+  width: 14em;
+}
+
+.rit a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0.6em;
+  position: relative;
+}
+
+.rit a:hover {
+  color: black;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.rit a::after {
+  content: "";
+  position: absolute;
+  height: 2em;
+  width: 6em;
+  background-color: aliceblue;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  z-index: -1;
+}
+
+.rit a:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.pic img {
+  height: 80%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  z-index: -1;
 }
 /*# sourceMappingURL=Main.css.map */

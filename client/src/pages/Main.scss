@@ -1,7 +1,8 @@
 body{
-	background-image:url('/public/assets/bg.png');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-position-y: 25%;
 }
 .login,.homepage,.register{
     background-color: rgba(34, 34, 16, 0.404);
@@ -163,3 +164,250 @@ h2{
       display: none;
     }
 }
+.nam{
+    color: aliceblue;
+    display: flex;
+    font-size: 1.8em;
+    gap: 0.4em;
+    transform: translateY(0.7em);
+}
+.nam:hover{
+    color: aqua;
+    transition: 1s ease-in-out;
+}
+.col1{
+    animation: bubble 2.7s ease-in-out infinite;
+}.col2{
+    animation: bubble 3s ease-in-out infinite;
+    animation-delay: 0.3s;
+}.col3{
+    animation: bubble 3s ease-in-out infinite;
+    animation-delay: 0.6s;
+}.col4{
+    animation: bubble 3s ease-in-out infinite;
+    animation-delay: 0.9s;
+}.col5{
+    animation: bubble 3s ease-in-out infinite;
+    animation-delay: 1.2s;
+}.col6{
+    animation: bubble 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}.col7{
+    animation: bubble 3s ease-in-out infinite;
+    animation-delay: 1.8s;
+}.col8{
+    animation: bubble 3s ease-in-out infinite;
+    animation-delay: 2.1s;
+}.col9{
+    animation: bubble 3s ease-in-out infinite;
+    animation-delay: 2.4s;
+}
+@keyframes bubble{
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+nav>svg{
+    height: 30px;
+    width: 50px;
+    margin: 20px;
+    fill: white;
+}
+nav>svg:hover{
+    fill: aqua;
+    transform: scale(1.2);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav>a:hover{
+    border-bottom: 4px solid aqua;
+    color: aqua;
+}
+.Features{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px;
+    color: aliceblue;
+    border-bottom: 3px solid aliceblue;
+}
+.midA{
+    height: 40px;
+}
+.Sub_Ftr{
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+
+    
+}
+.Ftr{
+    background-color: rgb(32, 29, 30);
+    color: white;
+    height: 220px;
+    text-align: center;
+    font-size: 4vw;
+    padding: 5vh;
+    box-shadow: 10px 5px 5px black;
+    border: 2px solid white;
+    border-radius: 0.4em;
+    /* padding: 10vh; */
+}
+.Ftr:hover{
+    transform: scale(1.2);
+    background-color: black;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.Bot{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    fill: aliceblue;
+    cursor: pointer;
+}
+.Bot>svg{
+    /* height: 50px; */
+    width: 4vw;
+    animation: mymove 2s infinite;
+}
+@keyframes mymove{
+    /* 0% {transform: scale(1);} */
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+    /* 60% {transform: scale(1.1);} */
+    /* 80% {transform: scale(1);} */
+}
+.Bot>svg:hover{
+    fill: aqua;
+    transition: 0.7s ease-in-out;
+}
+.Query{
+    height: 40vh;
+    width: 15vw;
+    background-color: rgb(183, 183, 214);
+    position: fixed;
+    bottom: 3vh;
+    right: 8vw;
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    z-index: 1;
+    opacity: 0;
+    border-radius: 5px;
+}
+.Query_Closed{
+    height: 40vh;
+    width: 15vw;
+    background-color: rgb(183, 183, 214);
+    position: fixed;
+    bottom: 3vh;
+    right: 8vw;
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    z-index: 1;
+    border-radius: 5px;
+    /* opacity: 0; */
+}
+.inpForm{
+    position: fixed;
+    bottom: 4vh;
+}
+.WriteQuery{
+    border-radius: 20px;
+    width: 11vw;
+    margin-left: 2px;
+}
+.Send{
+    width: 3vw;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+.Send:hover{
+    background-color: rgb(0, 255, 0);
+}
+video{
+    width:100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    opacity: 0.3;
+  }
+.color-overlay{
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  .rit{
+      position: absolute;
+      right: 0;
+      color: aliceblue;
+      transform: translateY(1em);
+      height: 2em;
+      width:14em;
+
+  }
+  .rit a{
+      color: aliceblue;
+      text-decoration: none;
+      padding: 0.6em;
+      position: relative;
+  }
+  .rit a:hover{
+      color: black;
+      transition: 0.5s ease-in-out;
+      background-color: rgba(0,0,0,0);
+
+  }
+  .rit a::after{
+      content: "";
+      position: absolute;
+      height: 2em;
+      width: 6em;
+      background-color: aliceblue;
+      bottom: 0;
+      left: 0;
+      transform: scale(0);
+      transform-origin: right;
+      z-index: -1;
+  }
+  .rit a:hover:after{
+      transform: scale(1);
+      transition: 0.5s ease-in-out;
+  }
+  .pic img{
+      height: 80%;
+      width: 100%;
+      align-items: center;
+      transform: translateY(-25%);
+      z-index: -1;
+  }
+  
+ 
+
+  
+

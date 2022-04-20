@@ -3,6 +3,8 @@ import {  BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Home from './pages/Home'
+import Mess from './pages/Mess'
+import Stc from './pages/Stc'
 
 
 function App() {
@@ -17,6 +19,12 @@ function App() {
             </Routes>
             <Routes>
                 <Route path="/join" element={<Login/>}/>
+            </Routes>
+            <Routes>
+                <Route path="/mess" element={<Mess/>}/>
+            </Routes>
+            <Routes>
+                <Route path="/stc" element={<Stc/>}/>
             </Routes>
         </Router>
 

@@ -2,19 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function home() {
-  function openBot(){
-    const a=document.getElementById("Query")
-    if(a.className=="Query")
-    {
-        a.style.opacity=1
-        a.className="Query_Closed"
-    }
-    else
-    {
-        a.style.opacity=0
-        a.className="Query"
-    }
-  }
+
   return (
     <div>
       <div className="color-overlay">
@@ -45,48 +33,51 @@ function home() {
       </div>
       <div className="rit">
         <Link to="/join">
-        <a className="Join">SIGN IN</a>
+        <button className="log">LOG IN</button>
         </Link>
         <Link to="/register">
-        <a className="Join">SIGN UP</a>
+        <button className="join">JOIN</button>
         </Link>
 
       </div>
         </nav>
-
-      
-
-
-  
-
-
-
-
-
-
-
-
-
-
-    
-
     <div className="Bot">
-        <svg id="Bot" onclick="openBot()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M9.375 233.4C3.375 239.4 0 247.5 0 256v128c0 8.5 3.375 16.62 9.375 22.62S23.5 416 32 416h32V224H32C23.5 224 15.38 227.4 9.375 233.4zM464 96H352V32c0-17.62-14.38-32-32-32S288 14.38 288 32v64H176C131.8 96 96 131.8 96 176V448c0 35.38 28.62 64 64 64h320c35.38 0 64-28.62 64-64V176C544 131.8 508.3 96 464 96zM256 416H192v-32h64V416zM224 296C201.9 296 184 278.1 184 256S201.9 216 224 216S264 233.9 264 256S246.1 296 224 296zM352 416H288v-32h64V416zM448 416h-64v-32h64V416zM416 296c-22.12 0-40-17.88-40-40S393.9 216 416 216S456 233.9 456 256S438.1 296 416 296zM630.6 233.4C624.6 227.4 616.5 224 608 224h-32v192h32c8.5 0 16.62-3.375 22.62-9.375S640 392.5 640 384V256C640 247.5 636.6 239.4 630.6 233.4z"/></svg>
-    </div>
-    <div className="Query" id="Query">
-
-        <form className="inpForm" action="">
-            <input className="WriteQuery" type="text"/>
-            <button className="Send">Send</button>
-        </form>
+        <svg id="Bot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M9.375 233.4C3.375 239.4 0 247.5 0 256v128c0 8.5 3.375 16.62 9.375 22.62S23.5 416 32 416h32V224H32C23.5 224 15.38 227.4 9.375 233.4zM464 96H352V32c0-17.62-14.38-32-32-32S288 14.38 288 32v64H176C131.8 96 96 131.8 96 176V448c0 35.38 28.62 64 64 64h320c35.38 0 64-28.62 64-64V176C544 131.8 508.3 96 464 96zM256 416H192v-32h64V416zM224 296C201.9 296 184 278.1 184 256S201.9 216 224 216S264 233.9 264 256S246.1 296 224 296zM352 416H288v-32h64V416zM448 416h-64v-32h64V416zM416 296c-22.12 0-40-17.88-40-40S393.9 216 416 216S456 233.9 456 256S438.1 296 416 296zM630.6 233.4C624.6 227.4 616.5 224 608 224h-32v192h32c8.5 0 16.62-3.375 22.62-9.375S640 392.5 640 384V256C640 247.5 636.6 239.4 630.6 233.4z"/></svg>
     </div>
 
 
     <div className="g">
+    <img src='/assets/2.jpg'/>
       <div className="mess">
-        <h1>bfbrcdnbfncdj</h1>
+        <div className="mes">
+<div className="txt">
+<h3>Having issues with your hostel mess?</h3>
+        <li>File your Mess rebate</li>
+        <li>Track your Attendance</li>
+        <li>Pay your mess bill</li>
+        <Link to="/mess">
+        <button >LESGO</button>
+        </Link>
+</div>
+        
+
+        </div>
       </div>
+      <div className="cm">
+      <h3>A student community</h3>
+      <li>share your experiences</li>
+      <li>Connect with people</li>
+      <li>Do stuff</li>
+      <Link to="/stc">
+      <button>Take me there!</button>
+      </Link>
     </div>
+    <div className="footer">
+      <h3>Made by DUDE CREW</h3>
+      <h3>all rights reserved</h3>
+    </div>
+    </div>
+    
         
     </div>
   )

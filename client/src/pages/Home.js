@@ -63,18 +63,42 @@ function home() {
 
         </div>
       </div>
+      <div className="cm2"></div>
       <div className="cm">
-      <h3>A student community</h3>
-      <li>share your experiences</li>
-      <li>Connect with people</li>
-      <li>Do stuff</li>
+        <div className="cm1">
+        <h3>A student community</h3>
+      <li>Share your experiences</li>
+      <li>Make posts </li>
+      <li>Connect with people and friends</li>
+      <li>Do a lot of fun stuff</li>
       <Link to="/stc">
       <button>Take me there!</button>
       </Link>
+        </div>
+        <div className="cm3"></div>
+
     </div>
-    <div className="footer">
-      <h3>Made by DUDE CREW</h3>
-      <h3>all rights reserved</h3>
+    <div className="fut">
+      <div className="wrd">
+      <p>ALL RIGHTS RESERVED</p>
+      <p>MADE BY D U D E C R E W</p>
+      </div>
+      <div className="con">
+      <p>CONNECT WITH US</p>
+      <div className="lnk">
+      <p>instagram</p>
+      <p>|</p>
+      <p>facebook</p>
+      <p>|</p>
+      <p>twitter</p>
+      <p>|</p>
+      <p>linkedIn</p>
+      </div>
+     
+
+
+      </div>
+    
     </div>
     </div>
     

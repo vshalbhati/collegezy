@@ -28,11 +28,19 @@ function Stc() {
 
       </div>
         </nav>
+        <div className="cards">
         <div className="card">
           <div className="typ">
             <p>This is my first post </p>
           </div>
         </div>
+        <div className="card">
+          <div className="typ">
+            <p>HAPPY HOLI NAGRA</p>
+          </div>
+        </div>
+        </div>
+        
     </div>
   )
 }

@@ -565,16 +565,26 @@ video {
   }
 }
 
-.cm {
-  width: 70%;
-  position: absolute;
-  margin-top: 70%;
-  margin-left: 20%;
-}
-
-.footer {
+.fut {
   margin-top: 80%;
   position: absolute;
+  background-color: #494f55;
+  width: 98.9vw;
+  height: 80vh;
+  color: aliceblue;
+}
+
+.wrd, .con {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.lnk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  place-content: center;
 }
 
 .m {
@@ -865,36 +875,175 @@ input[type="number"] {
   margin-top: 60%;
 }
 
-.card {
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  margin: 10em;
   position: absolute;
+}
+
+.card {
   text-align: center;
-  height: 2em;
+  height: 15em;
   padding: 2em;
   width: 15em;
-  margin: 10em;
   background: -webkit-gradient(linear, left bottom, left top, from(#21e0e0), to(#e962e9));
   background: linear-gradient(to top, #21e0e0, #e962e9);
 }
 
 .typ {
-  height: 0.1em;
+  height: 14.5em;
   width: 14.5em;
   padding: 1.8em;
   background-color: white;
-  -webkit-transform: translateX(-12%) translateY(-50%);
-          transform: translateX(-12%) translateY(-50%);
-  -webkit-transition: 0.6s all ease-in-out;
-  transition: 0.6s all ease-in-out;
+  -webkit-transform: translateX(-12%) translateY(-12%);
+          transform: translateX(-12%) translateY(-12%);
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   -webkit-transform-origin: top;
           transform-origin: top;
   cursor: pointer;
   text-align: center;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
 }
 
 .typ:hover {
-  background-color: transparent;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  color: aliceblue;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transform: scale(1.12) translateX(-12%) translateY(-19%);
+          transform: scale(1.12) translateX(-12%) translateY(-19%);
+}
+
+.cm {
+  position: absolute;
+  right: 0;
+  height: 32.6em;
+  width: 35%;
+  -webkit-transform: translateX(-150%) translateY(90%);
+          transform: translateX(-150%) translateY(90%);
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0ccda3), to(#c1fcd3));
+  background: linear-gradient(to top, #0ccda3, #c1fcd3);
+}
+
+@-webkit-keyframes ghum {
+  50% {
+    -webkit-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateX(1%) translateY(1%);
+            transform: translateX(1%) translateY(1%);
+  }
+}
+
+@keyframes ghum {
+  50% {
+    -webkit-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateX(1%) translateY(1%);
+            transform: translateX(1%) translateY(1%);
+  }
+}
+
+.cm1 {
+  background-color: white;
+  height: 32em;
+  width: 98%;
+  -webkit-animation-name: ghum;
+          animation-name: ghum;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transform: translateX(1%) translateY(1%);
+          transform: translateX(1%) translateY(1%);
+  padding: 8em;
+  border-radius: 50%;
+}
+
+.cm2 {
+  position: absolute;
+  height: 22em;
+  width: 22em;
+  -webkit-transform: translateX(10%) translateY(100%);
+          transform: translateX(10%) translateY(100%);
+  border-radius: 50%;
+  -webkit-animation-name: rolv;
+          animation-name: rolv;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: -1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ed765e), to(#e3bde5));
+  background: linear-gradient(to top, #ed765e, #e3bde5);
+}
+
+@-webkit-keyframes rolv {
+  100% {
+    -webkit-transform: translateX(100%) translateY(200%) scale(0);
+            transform: translateX(100%) translateY(200%) scale(0);
+  }
+}
+
+@keyframes rolv {
+  100% {
+    -webkit-transform: translateX(100%) translateY(200%) scale(0);
+            transform: translateX(100%) translateY(200%) scale(0);
+  }
+}
+
+.cm3 {
+  position: absolute;
+  height: 7em;
+  width: 7em;
+  z-index: -1;
+  -webkit-transform: translateX(450%) translateY(-60%);
+          transform: translateX(450%) translateY(-60%);
+  border-radius: 50%;
+  -webkit-animation-name: rolve;
+          animation-name: rolve;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e3bde5), to(#ed765e));
+  background: linear-gradient(to top, #e3bde5, #ed765e);
+}
+
+@-webkit-keyframes rolve {
+  100% {
+    -webkit-transform: translateX(130%) translateY(-380%) scale(0);
+            transform: translateX(130%) translateY(-380%) scale(0);
+  }
+}
+
+@keyframes rolve {
+  100% {
+    -webkit-transform: translateX(130%) translateY(-380%) scale(0);
+            transform: translateX(130%) translateY(-380%) scale(0);
+  }
+}
+
+.cm button:hover {
+  border: solid #c1fcd3 2px;
+  color: #c1fcd3;
+}
+
+.cm button {
+  border: solid #0ccda3 2px;
+  color: #0ccda3;
 }
 /*# sourceMappingURL=Main.css.map */

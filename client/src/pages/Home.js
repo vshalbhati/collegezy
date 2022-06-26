@@ -86,13 +86,13 @@ function home() {
       <div className="con">
       <p>CONNECT WITH ME</p>
       <div className="lnk">
-      <p href="https://www.instagram.com/vshalbhati_294">instagram</p>
+      <a href="https://www.instagram.com/vshalbhati_294">instagram</a>
       <p>|</p>
-      <p href="https://www.facebook.com">facebook</p>
+      <a href="https://www.facebook.com">facebook</a>
       <p>|</p>
-      <p href="https://github.com/vshalbhati">github</p>
+      <a href="https://github.com/vshalbhati">github</a>
       <p>|</p>
-      <p href="https://www.linkedin.com/in/vishal-bhati-06uk/">linkedIn</p>
+      <a href="https://www.linkedin.com/in/vishal-bhati-06uk/">linkedIn</a>
       </div>
      
 

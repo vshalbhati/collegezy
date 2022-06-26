@@ -389,7 +389,7 @@ video{
     position: absolute;
     background-color: rgb(73,79,85);
     width: 98.9vw;
-    height: 80vh;
+    height: 50vh;
     color: aliceblue;
 }
 .wrd,.con{
@@ -676,14 +676,14 @@ input[type="number"]{
     transform:translateX(10%) translateY(100%);
     border-radius: 50%;
     animation-name: rolv;
-    animation-duration: 10s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: -1;
     background: linear-gradient(to top,#ed765e, #e3bde5);
 }
 @keyframes rolv{
-    100%{
+    50%{
         transform:translateX(100%) translateY(200%) scale(0);
     }
 }
@@ -695,28 +695,22 @@ input[type="number"]{
     transform:translateX(450%) translateY(-60%);
     border-radius: 50%;
     animation-name: rolve;
-    animation-duration: 10s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     background: linear-gradient(to top,#e3bde5, #ed765e);
 }
 @keyframes rolve{
-100%{
+50%{
         transform:translateX(130%) translateY(-380%) scale(0); 
     }
 }
 .cm button:hover{
     border: solid #c1fcd3 2px;
     color:#c1fcd3;
+    transition: 1s;
 }
 .cm button{
     border: solid #0ccda3 2px;
     color:#0ccda3; 
 }
-
-
-  
- 
-
-  
-

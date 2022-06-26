@@ -81,16 +81,16 @@ function home() {
     <div className="fut">
       <div className="wrd">
       <p>ALL RIGHTS RESERVED</p>
-      <p>MADE BY D U D E C R E W</p>
+      <p>MADE BY V I S H A L</p>
       </div>
       <div className="con">
-      <p>CONNECT WITH US</p>
+      <p>CONNECT WITH ME</p>
       <div className="lnk">
       <p>instagram</p>
       <p>|</p>
       <p>facebook</p>
       <p>|</p>
-      <p>twitter</p>
+      <p>github</p>
       <p>|</p>
       <p>linkedIn</p>
       </div>
